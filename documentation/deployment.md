@@ -2,14 +2,14 @@
 
 ## Architecture
 
-Cette démonstration utilise uniquement Next.js et les technologies frontend incluses dans le dossier `frontend/`. Elle ne contient pas de backend Python, de route API dédiée, de base de données ni de stockage distant. Il n’y a aucun service externe à configurer et aucune variable d’environnement à renseigner.
+Cette démonstration utilise uniquement Next.js; l’application et son `package.json` sont à la racine du dépôt. Elle ne contient pas de backend Python, de route API dédiée, de base de données ni de stockage distant. Il n’y a aucun service externe à configurer et aucune variable d’environnement à renseigner.
 
 Les données de démonstration sont enregistrées dans le `localStorage` du navigateur. Chaque navigateur dispose de ses propres changements, non partagés avec les autres visiteurs. Les fichiers importés sont gardés en mémoire dans l’onglet et ne sont pas téléversés.
 
 ## Déploiement
 
 1. Importer le dépôt Git dans un projet Vercel.
-2. Dans **Project Settings → Build and Deployment**, définir `frontend` comme **Root Directory**.
+2. Dans **Project Settings → Build and Deployment**, définir le **Root Directory** sur la racine du dépôt (`.` ou laisser le champ vide/par défaut).
 3. Garder le preset **Next.js** et les commandes de build détectées automatiquement.
 4. Ne pas ajouter de variables d’environnement pour cette démo.
 5. Cliquer sur **Deploy**. Vercel construit et héberge l’application Next.js.
@@ -19,7 +19,7 @@ Après chaque modification, pousser le commit sur la branche configurée ou déc
 
 ## Exécution locale
 
-Depuis le dossier `frontend/` :
+Depuis la racine du dépôt :
 
 ```powershell
 npm install

@@ -8,7 +8,7 @@ ARCHIVIA est une démonstration commerciale d’une plateforme universelle de ge
 
 ## Contenu
 
-- `frontend/` : application Next.js App Router, TypeScript, Tailwind CSS, Recharts et Lucide React.
+- Application Next.js App Router à la racine du dépôt, TypeScript, Tailwind CSS, Recharts et Lucide React.
 - `documentation/deployment.md` : déploiement sur Vercel.
 - `documentation/demo-guide.md` : parcours de présentation et limites de la démo.
 
@@ -17,7 +17,6 @@ ARCHIVIA est une démonstration commerciale d’une plateforme universelle de ge
 Prérequis : Node.js 22 ou version compatible avec Next.js 16 et npm.
 
 ```powershell
-Set-Location frontend
 npm install
 npm run dev
 ```
@@ -28,7 +27,7 @@ L’import de démonstration accepte PDF, JPEG, PNG et TIFF jusqu’à 20 Mo. Le
 
 ## Contrôles
 
-Depuis `frontend/` :
+Depuis la racine du dépôt :
 
 ```powershell
 npm run lint
@@ -39,7 +38,7 @@ npm run build
 ## Déployer sur Vercel
 
 1. Importer le dépôt Git dans Vercel.
-2. Choisir `frontend` comme **Root Directory**.
+2. Garder la racine du dépôt (`.`) comme **Root Directory**. Le `package.json` se trouve à cet emplacement.
 3. Laisser Vercel détecter Next.js et ses commandes de build.
 4. Aucune variable d’environnement n’est nécessaire.
 5. Déployer, puis ouvrir l’URL fournie par Vercel.
